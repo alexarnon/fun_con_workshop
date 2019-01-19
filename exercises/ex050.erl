@@ -11,7 +11,7 @@ rev(L) ->
 
 %% Unit Tests
 
-repeat_test_() ->
+rev_test_() ->
     [?_assertEqual([], rev([])),
      ?_assertEqual([a], rev([a])),
      ?_assertEqual([44,333,"hello",1111], rev([1111,"hello",333,444]))

@@ -11,7 +11,7 @@ unspace(Str) ->
 
 %% Unit Tests
 
-repeat_test_() ->
+unspace_test_() ->
     [?_assertEqual("", unspace("")),
      ?_assertEqual("", unspace("   ")),
      ?_assertEqual("helpme", unspace("  hel p   me "))

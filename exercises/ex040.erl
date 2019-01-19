@@ -11,7 +11,7 @@ len(L) ->
 
 %% Unit Tests
 
-repeat_test_() ->
+len_test_() ->
     [?_assertEqual(0, len([])),
      ?_assertEqual(1, len([aaa])),
      ?_assertEqual(4, len([aaa, bbb, ccc, "hello"]))
