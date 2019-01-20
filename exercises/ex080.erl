@@ -12,9 +12,10 @@ wc(Str) ->
 %% Unit Tests
 
 wc_test_() ->
-    [?_assertEqual(0, wc("")),
-     ?_assertEqual(0, wc("   ")),
-     ?_assertEqual(1, wc("hello")),
-     ?_assertEqual(1, wc("  hello   ")),
-     ?_assertEqual(2, wc(" aa bbb   cccc   "))
+    [
+        ?_assertEqual(0, wc("")),
+        ?_assertEqual(0, wc("   ")),
+        ?_assertEqual(1, wc("hello")),
+        ?_assertEqual(1, wc("  hello   ")),
+        ?_assertEqual(2, wc(" aa bbb   cccc   "))
     ].
