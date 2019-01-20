@@ -15,6 +15,8 @@ for i in \
     ex090 \
     ex095 \
     ex100 \
+    ex110 \
+    ex130 \
     ; do
         erlc +debug_info $i.erl
 done

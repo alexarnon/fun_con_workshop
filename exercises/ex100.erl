@@ -12,6 +12,4 @@ for(V, Test, Body) ->
 %% Unit Tests
 
 for_test_() ->
-    [?_assert(1 /= 1),
-     ?_assertEqual(1, 2)
-    ].
+    [?_assert(1 /= 2)].
