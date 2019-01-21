@@ -18,6 +18,6 @@ for i in \
     ex110 \
     ex130 \
     ; do
-        erlc +debug_info $i.erl
+        erlc -pa . +debug_info $i.erl
 done
 

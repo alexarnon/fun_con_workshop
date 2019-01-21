@@ -2,11 +2,32 @@
 
 -include_lib("eunit/include/eunit.hrl").
 
+%%% Types
+%%% =====
+
+-type iter() :: {iter, atom(), any()}.
+
+
+%%% Behavior
+%%% ========
+
+-callback has_next(Iter :: iter()) -> boolean().
+-callback next(Iter :: iter()) -> {any(), iter()}.
+
+
+%%% Self exports
+%%% ============
+
 -export([new/2]).
 -export([has_next/1, at_end/1, next/1]).
 
 
+%%% API
+%%% ====
+
 %% Delegate modules will return this.
+-spec new(Mod::atom(), State::any()) -> iter().
+
 new(Mod, State)
   when is_atom(Mod) ->
     {iter, Mod, State}.

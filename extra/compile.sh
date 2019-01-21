@@ -8,6 +8,6 @@ for i in \
     iter_naturals \
     iter_lists \
     ; do
-        erlc +debug_info $i.erl
+        erlc -pa . +debug_info $i.erl
 done
 

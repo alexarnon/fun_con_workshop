@@ -2,6 +2,8 @@
 
 -include_lib("eunit/include/eunit.hrl").
 
+-behavior(iter).
+
 -export([new/1]).
 -export([has_next/1, next/1]).
 
