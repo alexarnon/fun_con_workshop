@@ -14,5 +14,5 @@ rev(L) ->
 rev_test_() ->
     [?_assertEqual([], rev([])),
      ?_assertEqual([a], rev([a])),
-     ?_assertEqual([44,333,"hello",1111], rev([1111,"hello",333,444]))
+     ?_assertEqual([444,333,"hello",1111], rev([1111,"hello",333,444]))
     ].

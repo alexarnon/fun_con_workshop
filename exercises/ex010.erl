@@ -5,9 +5,11 @@
 -export([sum/1]).
 
 
-sum(_) -> 
-    error(not_implemented).
-              
+sum(0) -> 
+    0;
+sum(N) when N > 0 -> 
+    N + sum(N-1).
+
 
 %% Unit Tests
 

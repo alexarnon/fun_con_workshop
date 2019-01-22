@@ -5,8 +5,10 @@
 -export([repeat/2]).
 
 
-repeat(N, X) ->
-    error(not_implemented).
+repeat(0, _) ->
+    [];
+repeat(N, X) when N > 0 ->
+    [X | repeat(N-1, X)].
 
 
 %% Unit Tests

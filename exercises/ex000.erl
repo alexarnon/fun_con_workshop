@@ -16,9 +16,9 @@ g(N) ->
 %% Unit Tests
 
 f_test() ->
-    ?_assert(not string:is_empty(f())).
+    ?_assert(string:is_empty(f())).
 
 g_test_() ->
-    [?_assertEqual(15, g(0)),
+    [?_assertEqual(17, g(0)),
      ?_assertEqual(19, g(1))
     ].
