@@ -6,9 +6,7 @@
 
 
 repeat(0, _) ->
-    [];
-repeat(N, X) when N > 0 ->
-    [X | repeat(N-1, X)].
+    error(not_implemented).
 
 
 %% Unit Tests

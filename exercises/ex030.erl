@@ -6,9 +6,6 @@
 
 
 sum(N) -> 
-    sum(N, 0).
-     
-sum(N, A) ->         
     error(not_implemented).
     
 
